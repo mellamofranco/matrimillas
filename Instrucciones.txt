@@ -1,0 +1,22 @@
+IMPORTANTE tanto los relojes como la computadora tienen que estar conectados a la misma red de wifi
+
+----- Instrucciones para iniciar los relojes -----
+
+EN LA COMPUTADORA
+0- asegurarse que todos los dispositivos esten en la misma red de wifi
+1- Abrir archivo VER-AP.bat y anotar el numero que dice en la linea "Dirección IPv4......", a este numero nos vamos a referir como IP de ahora en adelante
+2- Entrar al archivo ip.txt y remplazar todo lo que haya escrito por la nueva ip
+3- Entrar a la carpeta "1-server" y ejecutar el archivo RUN-PROGRAM.bat, se va a abrir una consola y va a decir algo de http:0.0.0.0:5555. Importante no cerrar la consola
+4- Entrar a la carpeta"2-client" y tambien ejecutar el archivo RUN-PROGRAM.bat, veremos algo similar a la anterior. Importante no cerrar la consola
+5- Si para este momento tenemos las dos consolas abiertas vamos bien ;)
+6- Abrir en el chrome (o cualquier navegador) la siguiente pagina {IP}:3002/manager Suponiendo que tu IP era "192.168.51.10" la pagina quedaria como 192.168.51.10:3002/manager
+
+EN LOS RELOJES
+
+7- En cada uno de los relojes que se vayan a utilizar hay que entrar a la pagina {IP}:3002/1 , {IP}:3002/2 , {IP}:3002/3 , {IP}:3002/4 para identificarlos, por ejemplo: suponinendo que nuestra IP es "192.168.51.10" y que hay una escena con dos relojes entonces iremos al navegador web del primer reloj e ingresaremos 192.168.51.10:3002/1 , luego iremos al navegador web del segundo reloj e ingresaremos 192.168.51.10:3002/2 . Si estuvieran los 4 en camara habria que en los siguientes ingresar /3 y /4 sucesivamente
+8- Para que la pantalla del reloj no se apague hay que tocarla una vez, esto hara que salga un cartel que dice "soy click" o algo similar y esto hara que nunca mas se apague
+
+Por cualquier consulta contactarme al telefono de arriba
+
+--------------------------------------------------
+Autores: Felipe Xaus, Franco Mosquera, Rocio Bozzani

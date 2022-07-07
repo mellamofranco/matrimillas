@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+    <meta name="ip" content=<%= ip %>>
+    <meta name="client_number" content="1">
+    <head>
+        <script src="../../scripts/io-manager-v2.js" defer></script>
+    <style>
+body {
+  padding: 2em;
+}
+
+table.table { width: 100%; }
+
+.table th, .table td { 
+  text-align: left; 
+  padding: 0.25em;
+}
+
+.table tr { 
+  border-bottom: 1px solid #DDD;
+}
+td.edit-buttons { text-align: left; }
+button { 
+  border-radius: 3px; 
+  border: none; 
+  margin: 0 0.25em; 
+  transition: all 0.3s;
+}
+
+button:hover { 
+  box-shadow: 0 0 4px rgba(3,3,3,0.8); 
+  opacity: 0.9;
+}
+
+.edit { background: #6F9; }
+.delete { background: #F69; }
+
+@media screen and (max-width: 800px) {
+  tr { 
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0.5em 0;
+    border: 1px solid rgba(11, 75, 212, 0.2);
+  }
+  td, th {
+    flex: 1 1 150px;
+    border: 0.5px solid rgba(11, 75, 212, 0.2);
+  }
+}
+
+:root { font-family: 'futura'; }
+    </style>
+</head>
+    <body id="body">
+        <h1>Cambios de animacion </h1>
+        <table class="table">
+          <tr>
+            <td>Reloj 1: </td>
+            <td>
+                Enviar animacion 
+                <select name="animacion" id="animacion_reloj_1">
+                  <option value="suma">Suma</option>
+                  <option value="resta">Resta</option>
+                  <option value="voice">Voice</option>
+                  <option value="reposo">Reposo</option>
+                  <option value="notificacion">Notificacion</option>
+                  <option value="qr">QR</option>
+                  <option value="qr-blanco">QR-BLANCO</option>
+                </select>
+            </td>
+            <td class="edit-buttons"><button id="1" onClick="changeAnimation(this.id)">Enviar</button></td>
+          </tr>
+          <tr>
+            <td>Reloj 2: </td>
+            <td>
+              Enviar animacion 
+              <select name="animacion" id="animacion_reloj_2">
+                <option value="suma">Suma</option>
+                <option value="resta">Resta</option>
+                <option value="voice">Voice</option>
+                <option value="reposo">Reposo</option>
+                <option value="notificacion">Notificacion</option>
+                <option value="qr">QR</option>
+                <option value="qr-blanco">QR-BLANCO</option>
+              </select>
+            </td>
+            <td class="edit-buttons"><button id="2" onClick="changeAnimation(this.id)">Enviar</button></td>
+          </tr>
+          <tr>
+            <td>Reloj 3: </td>
+            <td>
+              Enviar animacion 
+              <select name="animacion" id="animacion_reloj_3">
+                <option value="suma">Suma</option>
+                <option value="resta">Resta</option>
+                <option value="voice">Voice</option>
+                <option value="reposo">Reposo</option>
+                <option value="notificacion">Notificacion</option>
+                <option value="qr">QR</option>
+                <option value="qr-blanco">QR-BLANCO</option>
+              </select>
+            </td>
+            <td class="edit-buttons"><button id="3" onClick="changeAnimation(this.id)">Enviar</button></td>
+          </tr>
+          <tr>
+            <td>Reloj 4: </td>
+            <td>
+              Enviar animacion 
+              <select name="animacion" id="animacion_reloj_4">
+                  <option value="suma">Suma</option>
+                  <option value="resta">Resta</option>
+                  <option value="voice">Voice</option>
+                  <option value="reposo">Reposo</option>
+                  <option value="notificacion">Notificacion</option>
+                  <option value="qr">QR</option>
+                  <option value="qr-blanco">QR-BLANCO</option>
+              </select>
+            </td>
+            <td class="edit-buttons"><button id="4" onClick="changeAnimation(this.id)">Enviar</button></td>
+          </tr>
+        </table>
+    </body>
+</html>
